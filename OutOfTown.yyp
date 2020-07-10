@@ -151,6 +151,14 @@
             }
         },
         {
+            "Key": "af4ba816-db45-4fa5-b260-8b6efc599ed9",
+            "Value": {
+                "id": "9c872a57-255c-4ce6-88ce-0718ce34e5c9",
+                "resourcePath": "scripts\\scr_delta_time\\scr_delta_time.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "b21e203d-832f-45d4-a15e-55d70fc57408",
             "Value": {
                 "id": "a9a46793-784d-47bb-82ba-ffcff5a6a0bc",
@@ -264,7 +272,8 @@
         }
     ],
     "script_order": [
-        "37431d7e-12ea-4c61-b6ef-4fce3e8d3541"
+        "37431d7e-12ea-4c61-b6ef-4fce3e8d3541",
+        "af4ba816-db45-4fa5-b260-8b6efc599ed9"
     ],
     "tutorial": ""
 }
