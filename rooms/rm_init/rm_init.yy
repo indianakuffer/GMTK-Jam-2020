@@ -1,8 +1,8 @@
 
 {
-    "name": "room0",
+    "name": "rm_init",
     "id": "aa9fea5a-a56f-4357-bc86-1ba5c3d89c44",
-    "creationCodeFile": "",
+    "creationCodeFile": "RoomCreationCode.gml",
     "inheritCode": false,
     "inheritCreationOrder": false,
     "inheritLayers": false,
@@ -109,7 +109,7 @@
         "id": "a72dd963-a8d5-4a0b-9321-3e8b3f3e6fdc",
         "clearDisplayBuffer": true,
         "clearViewBackground": false,
-        "enableViews": false,
+        "enableViews": true,
         "inheritViewSettings": false,
         "modelName": "GMRoomViewSettings",
         "mvc": "1.0"
