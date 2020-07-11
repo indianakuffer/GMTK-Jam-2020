@@ -5,8 +5,9 @@ var menu_select = keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_
 //draw options
 for (var i = 0; i < array_length_1d(options); i += 1){
 	draw_set_color(c_black);
-	draw_set_font(fnt_orangekid);
+	draw_set_font(fnt_orangekid20);
 	draw_set_valign(fa_center);
+	draw_set_halign(fa_left);
 	draw_text(x,y+(space*i),options[i]);
 	if (pos = i){
 		draw_sprite(spr_cursor,0,x-4,y+(space*i));
