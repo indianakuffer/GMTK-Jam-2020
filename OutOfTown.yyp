@@ -71,6 +71,14 @@
             }
         },
         {
+            "Key": "36dafacb-be42-4f6d-8073-0d79a477cfab",
+            "Value": {
+                "id": "3137a2af-fc28-4bb5-b520-f04620ae52be",
+                "resourcePath": "objects\\obj_wall\\obj_wall.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "37431d7e-12ea-4c61-b6ef-4fce3e8d3541",
             "Value": {
                 "id": "ef27acc3-25e9-43ba-a1d9-a3d59012a12c",
@@ -151,6 +159,14 @@
             }
         },
         {
+            "Key": "737a26fb-c646-4b01-9662-ae4ef5eec72f",
+            "Value": {
+                "id": "2b742f45-9a73-492d-b79a-578eabaff10d",
+                "resourcePath": "sprites\\spr_wall\\spr_wall.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "75ac291e-7061-4bcb-8e8a-3b3545332d41",
             "Value": {
                 "id": "28e3d923-bd87-45d9-bee9-99ff810d3ac1",
@@ -164,6 +180,22 @@
                 "id": "76da641a-59c9-4be6-bfde-515dd4eb968f",
                 "resourcePath": "objects\\obj_gameManager\\obj_gameManager.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "79e1e089-d5f7-4c75-8f2a-cf84e67775fe",
+            "Value": {
+                "id": "97324145-b94e-4e2c-b574-6e9a6ee5d9ee",
+                "resourcePath": "objects\\obj_camera\\obj_camera.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "7f0ce674-f936-4fff-a678-fbe074086944",
+            "Value": {
+                "id": "d5a3d91f-1fa9-4bf7-ac85-bfce83a11985",
+                "resourcePath": "sprites\\spr_tileset\\spr_tileset.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -318,6 +350,13 @@
                 "resourceType": "GMScript"
             }
         },
+            "Key": "c052bf36-3e7f-4793-aabd-741066b704b5",
+            "Value": {
+                "id": "27b55d39-0f67-4d4e-bb26-c170b174eefd",
+                "resourcePath": "tilesets\\tileset0\\tileset0.yy",
+                "resourceType": "GMTileSet"
+            }
+         },
         {
             "Key": "c21b1174-a2c9-4e9b-bca2-29c3b8eb2eb8",
             "Value": {
