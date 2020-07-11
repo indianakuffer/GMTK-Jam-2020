@@ -1,3 +1,5 @@
+depth = global.uiDepth
+
 alarm_speed = room_speed;
 
 minutes = 0;
