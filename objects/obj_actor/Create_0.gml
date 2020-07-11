@@ -1,10 +1,10 @@
 /// @description init actor & handle actor macros
 // You can write your code in this editor
 
-#macro actor_velocity 3.5
+#macro actor_velocity 1.5
 #macro actor_friction .7
 #macro interact_maxDistance 10
-#macro attachment_offset 10
+#macro attachment_offset 5
 //#macro keyhold_timer 6
 
 //movement variables
