@@ -63,6 +63,22 @@
             }
         },
         {
+            "Key": "1ed4669e-5ecb-43a8-a9f9-2f3db058f070",
+            "Value": {
+                "id": "a242d36c-2813-47bf-858e-a101244981b3",
+                "resourcePath": "fonts\\fnt_orangekid20\\fnt_orangekid20.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
+            "Key": "2a3ae935-50b7-45ec-909c-a653e47db28a",
+            "Value": {
+                "id": "f557a666-d0db-499b-890e-b57b4e97e92e",
+                "resourcePath": "objects\\obj_timer\\obj_timer.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "36dafacb-be42-4f6d-8073-0d79a477cfab",
             "Value": {
                 "id": "3137a2af-fc28-4bb5-b520-f04620ae52be",
