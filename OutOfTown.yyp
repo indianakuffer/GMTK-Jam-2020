@@ -183,6 +183,14 @@
             }
         },
         {
+            "Key": "64584047-d4c8-4aaf-8e1a-9b4898d79dc4",
+            "Value": {
+                "id": "1924d62c-7d67-466a-a42f-b2c2d4e605aa",
+                "resourcePath": "sprites\\spr_spawn\\spr_spawn.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "657f2db4-1dc5-49dd-9352-12bfa474f6a9",
             "Value": {
                 "id": "ec0b0fe6-25e4-4766-8379-d77cce83d0e7",
@@ -268,6 +276,14 @@
                 "id": "95d4f002-f6ef-4684-b1ab-a8b48316e5c6",
                 "resourcePath": "views\\992cc412-b76c-475a-b3ac-55ee4cdfa25a.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "9abf3648-cf7b-400e-9fdb-456a69b803fa",
+            "Value": {
+                "id": "bc6ff089-ef87-4050-be60-bddc1dddbb56",
+                "resourcePath": "sounds\\snd_music\\snd_music.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -388,6 +404,22 @@
                 "id": "fcfc570a-579e-4598-91d4-a38066470be0",
                 "resourcePath": "options\\windows\\options_windows.yy",
                 "resourceType": "GMWindowsOptions"
+            }
+        },
+        {
+            "Key": "d0172450-c422-48c8-aa7f-365021966850",
+            "Value": {
+                "id": "40ffc9e3-f2b7-4a2f-b052-64e651f538d4",
+                "resourcePath": "objects\\obj_musicManager\\obj_musicManager.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "d047855b-57e8-4c53-b6f6-837b20323f38",
+            "Value": {
+                "id": "b3bab68f-fd18-4650-88ad-2dcd443b30b7",
+                "resourcePath": "objects\\obj_npcSpawn\\obj_npcSpawn.yy",
+                "resourceType": "GMObject"
             }
         },
         {
