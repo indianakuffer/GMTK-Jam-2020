@@ -1,6 +1,13 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+//recover velocityModifier
+if (velocityModifier < 1){
+	velocityModifier += velocity_recovery;
+} else {
+	velocityModifier = 1
+}
+//show_debug_message(velocityModifier)
 
 //replace keyboard checks with scr_readInputs later
 

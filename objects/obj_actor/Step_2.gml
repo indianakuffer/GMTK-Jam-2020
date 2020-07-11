@@ -1,8 +1,8 @@
 /// @description movement
 // You can write your code in this editor
 
-newX = xprevious + (xdir * xVelocity * (global.step_delta));
-newY = yprevious + (ydir * yVelocity * (global.step_delta));
+newX = xprevious + (xdir * xVelocity * velocityModifier * (global.step_delta));
+newY = yprevious + (ydir * yVelocity * velocityModifier *  (global.step_delta));
 //accomidate for collisions
 while(place_meeting(newX,newY,obj_wall)){
 	if(place_meeting(xprevious, newY, obj_wall)){
