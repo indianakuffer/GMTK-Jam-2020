@@ -1,4 +1,4 @@
 event_inherited()
 solution = obj_plant
-broken = true
+broken = false
 brokenSprite = spr_plant
