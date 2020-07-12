@@ -11,3 +11,5 @@ time_accumulator = 0;
 move_freq = random_range(frequency_lower, frequency_upper);
 move_dir = degtorad(random_range(0,360));
 move_length = random_range(1, actor_velocity);
+
+image_blend = choose(c_green, c_red, c_blue, c_purple, c_fuchsia, c_aqua, c_olive, c_teal);

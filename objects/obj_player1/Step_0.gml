@@ -14,9 +14,11 @@ if (velocityModifier < 1){
 //movement
 
 if keyboard_check(keymap_left){
+	image_index = 0;
 	xdir = -1;
 	xVelocity = actor_velocity;
 } else if keyboard_check(keymap_right){
+	image_index = 1;
 	xdir = 1;
 	xVelocity = actor_velocity;
 } else if (xVelocity > 0){
@@ -27,9 +29,11 @@ if keyboard_check(keymap_left){
 }
 
 if keyboard_check(keymap_up){
+		image_index = 2;
 	    ydir = -1;
 		yVelocity = actor_velocity;
 } else if keyboard_check(keymap_down){
+		image_index = 3;
 	    ydir = 1;
 		yVelocity = actor_velocity;
 } else if (yVelocity > 0){
