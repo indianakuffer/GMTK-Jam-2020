@@ -8,4 +8,4 @@ originalSprite = sprite_index
 brokenSprite = spr_wall
 
 thresholdCounter = 0
-threshold = room_speed * 10
+threshold = aocFailTimer;
