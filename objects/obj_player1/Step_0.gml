@@ -67,16 +67,7 @@ if keyboard_check_pressed(vk_space){
 				instance_destroy(inst_resource);
 				// DO SOMETHING FOR THE PLAYER HERE LIKE INCREASE LIFE AND SWAP CONTROLS
 				numLives ++;
-				//get current mapping
-				var newMap = ds_list_create()
-				//keys rotated clockwise
-				ds_list_add(newMap, keymap_right, keymap_up, keymap_left, keymap_down);
-				keymap_up = ds_list_find_value(newMap, 0);
-				keymap_left = ds_list_find_value(newMap, 1);
-				keymap_down = ds_list_find_value(newMap, 2);
-				keymap_right = ds_list_find_value(newMap, 3);
-				show_debug_message("keys rotated")
-
+				dazed = true;
 			} else {
 				//add object to the top of the carrying stack
 				ds_list_add(carrying, inst_resource);
@@ -99,4 +90,24 @@ if keyboard_check_pressed(vk_space){
 		ds_list_delete(carrying, ds_list_size(carrying) - 1);
 	}
 }
-	//interaction_timeAccumulator = 0;
+
+//apply keymapping swap
+if dazed {
+	dazed_time += global.step_delta;
+	if (dazed_time < dazed_length){
+		//change applied mapping
+		var mapping = newMap;
+		show_debug_message("keys rotated")
+	} else {
+		dazed_time = 0;
+		dazed = false;
+		var mapping = curMap;
+	}
+	show_debug_message(dazed_time);
+	//apply mapping
+	keymap_up = ds_list_find_value(mapping, 0);
+	keymap_left = ds_list_find_value(mapping, 1);
+	keymap_down = ds_list_find_value(mapping, 2);
+	keymap_right = ds_list_find_value(mapping, 3);	
+	
+}		
