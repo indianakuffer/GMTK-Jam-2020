@@ -11,31 +11,31 @@ aoc trigger = constant
 
 lives -= failed AOC
 */
-
+if (global.gameRunning) {
 //As time increases, increase spawn pool
-if (global.passedTime - last_spawn) > spawnRate {
-	spawn_pool++;
-	last_spawn = global.passedTime;
-	var spawned = script_execute(scr_spawnNPCpool, int64(spawn_pool));
-	if spawned != 0 {
-		//show_debug_message(spawned)
-		spawn_pool = 0;
+	if (global.passedTime - last_spawn) > spawnRate {
+		spawn_pool++;
+		last_spawn = global.passedTime;
+		var spawned = script_execute(scr_spawnNPCpool, int64(spawn_pool));
+		if spawned != 0 {
+			//show_debug_message(spawned)
+			spawn_pool = 0;
+		}
 	}
+
+	if (global.passedTime - last_shot) > shotRate { 
+		script_execute(scr_spawnShot);
+		last_shot = global.passedTime;
+	}
+
+	if (global.passedTime - last_maxIncrease) > aocMaxRate && 
+		maxAocsBroken < instance_number(obj_agentOfChaos){
+			maxAocsBroken ++;
+			show_debug_message("Active AOC " + string(maxAocsBroken));
+		last_maxIncrease = global.passedTime;
+	}
+
 }
-
-if (global.passedTime - last_shot) > shotRate && instance_number(obj_shot) < max_shots { 
-	script_execute(scr_spawnShot);
-	last_shot = global.passedTime;
-}
-
-if (global.passedTime - last_maxIncrease) > aocMaxRate && 
-	maxAocsBroken < instance_number(obj_agentOfChaos){
-		maxAocsBroken ++;
-		show_debug_message("Active AOC " + string(maxAocsBroken));
-	last_maxIncrease = global.passedTime;
-}
-
-
 
 
 
