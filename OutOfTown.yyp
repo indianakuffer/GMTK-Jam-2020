@@ -167,6 +167,14 @@
             }
         },
         {
+            "Key": "27b328fc-c485-4f6e-9688-ac2f15e26ff0",
+            "Value": {
+                "id": "276913ed-a717-4dd8-9162-72aa2ed8fe08",
+                "resourcePath": "fonts\\fnt_orangekid36\\fnt_orangekid36.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "2886029c-1150-4036-9156-fd9243cab7b7",
             "Value": {
                 "id": "d228f7a9-3b15-447a-9880-4fd2cae5d145",
@@ -719,7 +727,15 @@
             }
         },
         {
-            "Key": "e8327387-ac14-4a25-a897-2323ada898e8",
+          "Key": "e802a614-bdba-4a27-80e6-5538fbd5d35c",
+            "Value": {
+                "id": "8cc24085-1a28-43db-9d79-2d6719672dcb",
+                "resourcePath": "fonts\\fnt_arial\\fnt_arial.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
+          "Key": "e8327387-ac14-4a25-a897-2323ada898e8",
             "Value": {
                 "id": "d4b0631b-78d6-4b22-9a80-0190f822ddb6",
                 "resourcePath": "tilesets\\tileset1\\tileset1.yy",
