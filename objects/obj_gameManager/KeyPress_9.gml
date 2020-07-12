@@ -16,4 +16,11 @@ instance_create_layer(random_range(inner_bounds, room_width - inner_bounds),
 		obj_dropPoint)
 
 */
-script_execute(scr_spawnShot);
+/*script_execute(scr_spawnShot);
+
+
+var spawned = script_execute(scr_spawnNPCpool, int64(spawn_pool));
+if spawned != 0 {
+	show_debug_message(spawned)
+	spawn_pool = 0;
+}*/

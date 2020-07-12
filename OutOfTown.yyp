@@ -175,6 +175,14 @@
             }
         },
         {
+            "Key": "41054180-2bc3-44f0-b748-5b1684dd67b7",
+            "Value": {
+                "id": "d729681c-8e7e-481b-b117-333c28901f6d",
+                "resourcePath": "scripts\\scr_spawnNPCpool\\scr_spawnNPCpool.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "4afcfdd2-a83d-425b-a08b-8cda707963f7",
             "Value": {
                 "id": "3c9ee2ba-db39-4b23-ac71-1061e3aae25c",
@@ -415,6 +423,14 @@
             }
         },
         {
+            "Key": "b2cddab3-2643-4c01-a0a2-5178aca0a3b3",
+            "Value": {
+                "id": "0401e03a-7003-4203-a9c0-7ff6693c796d",
+                "resourcePath": "objects\\obj_score\\obj_score.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "b51b7391-ef79-4493-a739-0238386e1b1c",
             "Value": {
                 "id": "7730f91a-620e-4e8c-9205-8b5c939a683a",
@@ -627,7 +643,8 @@
         "37431d7e-12ea-4c61-b6ef-4fce3e8d3541",
         "af4ba816-db45-4fa5-b260-8b6efc599ed9",
         "11d95243-4538-4460-9ff0-f57214ca89b9",
-        "270a2807-a570-447d-b919-aba07f8ac737"
+        "270a2807-a570-447d-b919-aba07f8ac737",
+        "41054180-2bc3-44f0-b748-5b1684dd67b7"
     ],
     "tutorial": ""
 }
