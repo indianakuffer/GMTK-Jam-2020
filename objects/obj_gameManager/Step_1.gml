@@ -23,7 +23,7 @@ if (global.gameRunning) {
 		}
 	}
 
-	if (global.passedTime - last_shot) > shotRate { 
+	if (global.passedTime - last_shot) > shotRate && instance_number(obj_shot) < max_shots { 
 		script_execute(scr_spawnShot);
 		last_shot = global.passedTime;
 	}
