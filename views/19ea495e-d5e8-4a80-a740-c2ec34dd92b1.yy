@@ -6,7 +6,8 @@
     "children": [
         "f15dc9e7-ec88-4ba4-93fd-f1209512f31a",
         "e01c7dc5-892b-4ef3-87d0-45cc18dc3e40",
-        "584d7aee-eb40-4a35-aac3-3cf736a6f3fc"
+        "584d7aee-eb40-4a35-aac3-3cf736a6f3fc",
+        "cc5ab6fb-f227-4dbb-8589-e1fb742b2c52"
     ],
     "filterType": "GMSprite",
     "folderName": "resources",
