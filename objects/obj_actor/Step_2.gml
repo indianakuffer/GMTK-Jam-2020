@@ -7,14 +7,21 @@ newY = yprevious + (ydir * yVelocity * velocityModifier *  (global.step_delta));
 //accomidate for collisions
 var iter_cap = 10;
 var i = 0;
-while(place_meeting(newX,newY,obj_wall) || i < iter_cap){
+while(place_meeting(newX,newY,obj_wall) && i < iter_cap){
 	if(place_meeting(xprevious, newY, obj_wall)){
 		newY -= ydir;
 	}
 	if(place_meeting(newX, yprevious, obj_wall)){
 		newX -= xdir;
 	}
+	if(i == (iter_cap - 1)){
+		script_execute(scr_debugMsg("Actor " + string(id) + " hitting iter cap"));	
+	}
 	i++;
+}
+if(i >= iter_cap){
+	newX = xprevious;
+	newY = yprevious;
 }
 x = newX;
 y = newY;
