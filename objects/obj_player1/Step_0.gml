@@ -12,11 +12,12 @@ if (velocityModifier < 1){
 //replace keyboard checks with scr_readInputs later
 
 //movement
+
 if keyboard_check(keymap_left){
 	xdir = -1;
 	xVelocity = actor_velocity;
 } else if keyboard_check(keymap_right){
-    xdir = 1;
+	xdir = 1;
 	xVelocity = actor_velocity;
 } else if (xVelocity > 0){
 	xVelocity -= actor_friction;
@@ -26,11 +27,11 @@ if keyboard_check(keymap_left){
 }
 
 if keyboard_check(keymap_up){
-     ydir = -1;
-	 yVelocity = actor_velocity;
+	    ydir = -1;
+		yVelocity = actor_velocity;
 } else if keyboard_check(keymap_down){
-     ydir = 1;
-	 yVelocity = actor_velocity;
+	    ydir = 1;
+		yVelocity = actor_velocity;
 } else if (yVelocity > 0){
 	yVelocity -= actor_friction;
 } else {
@@ -38,6 +39,10 @@ if keyboard_check(keymap_up){
 	yVelocity = 0;
 }
 
+if (!global.gameRunning) {
+	xVelocity = 0
+	yVelocity = 0
+}
 
 //interaction
 /*if keyboard_check(vk_space){
