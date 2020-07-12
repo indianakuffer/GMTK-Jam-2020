@@ -239,10 +239,18 @@
             }
         },
         {
+            "Key": "6626b31d-3237-47db-980a-ece54bfd054f",
+            "Value": {
+                "id": "fd287ca1-84a0-4f6f-8fdd-d0993636336d",
+                "resourcePath": "sprites\\spr_mop\\spr_mop.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6893fade-a6f3-4d4f-bb87-692365c665da",
             "Value": {
                 "id": "96a5b365-8ad9-4ab3-89e4-33813bc93c69",
-                "resourcePath": "objects\\obj_jarRes\\obj_jarRes.yy",
+                "resourcePath": "objects\\obj_mop\\obj_mop.yy",
                 "resourceType": "GMObject"
             }
         },

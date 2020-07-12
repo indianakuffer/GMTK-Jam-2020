@@ -1,4 +1,4 @@
 event_inherited()
-solution = obj_plant
+solution = obj_mop
 broken = false
 brokenSprite = spr_spill
