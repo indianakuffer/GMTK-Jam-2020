@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 //MVP
-/* Determine Game State Based off of: 
+/* Modify the active game state based off of: 
 
 3 lives
 Time = more people
@@ -23,7 +23,6 @@ if (global.passedTime - last_spawn) > spawnRate {
 	}
 }
 
-
 if (global.passedTime - last_shot) > shotRate { 
 	script_execute(scr_spawnShot);
 	last_shot = global.passedTime;
@@ -35,6 +34,10 @@ if (global.passedTime - last_maxIncrease) > aocMaxRate &&
 		show_debug_message("Active AOC " + string(maxAocsBroken));
 	last_maxIncrease = global.passedTime;
 }
+
+
+
+
 
 /*
 GALAXY BRAIN BALANCING GET THAT SHIT OUTTA HERE WE DON'T GOT TIME FOR THAT

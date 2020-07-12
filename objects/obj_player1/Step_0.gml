@@ -12,10 +12,10 @@ if (velocityModifier < 1){
 //replace keyboard checks with scr_readInputs later
 
 //movement
-if keyboard_check(vk_left) || keyboard_check(ord("A")){
+if keyboard_check(keymap_left){
 	xdir = -1;
 	xVelocity = actor_velocity;
-} else if keyboard_check(vk_right) || keyboard_check(ord("D")){
+} else if keyboard_check(keymap_right){
     xdir = 1;
 	xVelocity = actor_velocity;
 } else if (xVelocity > 0){
@@ -25,10 +25,10 @@ if keyboard_check(vk_left) || keyboard_check(ord("A")){
 	xVelocity = 0;
 }
 
-if keyboard_check(vk_up) || keyboard_check(ord("W")){
+if keyboard_check(keymap_up){
      ydir = -1;
 	 yVelocity = actor_velocity;
-} else if keyboard_check(vk_down) || keyboard_check(ord("S")){
+} else if keyboard_check(keymap_down){
      ydir = 1;
 	 yVelocity = actor_velocity;
 } else if (yVelocity > 0){
@@ -65,9 +65,18 @@ if keyboard_check_pressed(vk_space){
 				ds_list_delete(inventory, ds_list_size(inventory) - 1);
 				variable_instance_set(parent_id,"carrying", inventory);
 				instance_destroy(inst_resource);
-				
-				// DO SOMETHING FOR THE PLAYER HERE LIKE INCREASE LIFE
-				
+				// DO SOMETHING FOR THE PLAYER HERE LIKE INCREASE LIFE AND SWAP CONTROLS
+				numLives ++;
+				//get current mapping
+				var newMap = ds_list_create()
+				//keys rotated clockwise
+				ds_list_add(newMap, keymap_right, keymap_up, keymap_left, keymap_down);
+				keymap_up = ds_list_find_value(newMap, 0);
+				keymap_left = ds_list_find_value(newMap, 1);
+				keymap_down = ds_list_find_value(newMap, 2);
+				keymap_right = ds_list_find_value(newMap, 3);
+				show_debug_message("keys rotated")
+
 			} else {
 				//add object to the top of the carrying stack
 				ds_list_add(carrying, inst_resource);

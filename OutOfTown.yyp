@@ -87,6 +87,14 @@
             }
         },
         {
+            "Key": "18f6bc12-cfd0-4d70-83e8-e3dc91d5afc9",
+            "Value": {
+                "id": "6e5dc2b2-18ae-405d-9959-fb78f37c176f",
+                "resourcePath": "objects\\obj_lives\\obj_lives.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "19ea495e-d5e8-4a80-a740-c2ec34dd92b1",
             "Value": {
                 "id": "7f0d15fd-3c7e-48ab-91a4-f327795e59a7",

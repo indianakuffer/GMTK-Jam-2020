@@ -17,6 +17,9 @@ last_shot = 0;
 #macro aocMaxRate 30
 last_maxIncrease = 0;
 
+//UI creation
+instance_create_depth(x, y,global.uiDepth,obj_lives);
+
 aocList = ds_list_create()
 aocsBroken = 0
 maxAocsBroken = 2
