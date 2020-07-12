@@ -6,3 +6,6 @@ variable_instance_set(dropPoint, "owner", id)
 broken = false
 originalSprite = sprite_index
 brokenSprite = spr_wall
+
+thresholdCounter = 0
+threshold = room_speed * 10
