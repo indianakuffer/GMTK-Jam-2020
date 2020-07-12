@@ -11,7 +11,7 @@ global.debug_flag = false;
 last_spawn = 0;
 spawn_pool = 0;
 
-#macro shotRate 15
+#macro shotRate 10
 last_shot = 0;
 
 #macro aocMaxRate 30

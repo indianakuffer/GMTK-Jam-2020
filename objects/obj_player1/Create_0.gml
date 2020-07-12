@@ -6,9 +6,9 @@ event_inherited();
 
 numLives = 3
 
-#macro dazed_length 120
+#macro dazed_length 10
 dazed = false;
-dazed_time = 0;
+dazed_start = 0;
 
 keymap_up = ord("W");
 keymap_left = ord("A");

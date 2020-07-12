@@ -68,6 +68,7 @@ if keyboard_check_pressed(vk_space){
 				// DO SOMETHING FOR THE PLAYER HERE LIKE INCREASE LIFE AND SWAP CONTROLS
 				numLives ++;
 				dazed = true;
+				dazed_start = global.passedTime;
 			} else {
 				//add object to the top of the carrying stack
 				ds_list_add(carrying, inst_resource);
@@ -93,17 +94,15 @@ if keyboard_check_pressed(vk_space){
 
 //apply keymapping swap
 if dazed {
-	dazed_time += global.step_delta;
-	if (dazed_time < dazed_length){
+	if (global.passedTime - dazed_start < dazed_length){
 		//change applied mapping
 		var mapping = newMap;
-		show_debug_message("keys rotated")
+		//show_debug_message("keys rotated")
 	} else {
-		dazed_time = 0;
 		dazed = false;
 		var mapping = curMap;
 	}
-	show_debug_message(dazed_time);
+	show_debug_message("Dazed time remaining: " + string(dazed_length - (global.passedTime - dazed_start)));
 	//apply mapping
 	keymap_up = ds_list_find_value(mapping, 0);
 	keymap_left = ds_list_find_value(mapping, 1);
