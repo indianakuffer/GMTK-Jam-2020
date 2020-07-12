@@ -55,16 +55,32 @@ if keyboard_check_pressed(vk_space){
 		if (distance_to_object(inst_resource) <= interact_maxDistance
 		&& (ds_list_empty(carrying) || ds_list_find_index(carrying, inst_resource) == -1)){
 			script_execute(scr_debugMsg, ("Carrying " + string(inst_resource)));
-			//add object to the top of the carrying stack
-			ds_list_add(carrying, inst_resource);
-			//set actor to attached resource
-			variable_instance_set(inst_resource, "attached", id)
-			newResourceInRange = true;
+			
+			//if the object picked up was a shot
+			if(inst_resource.object_index == obj_shot){
+				
+				//get parent
+				var parent_id = variable_instance_get(inst_resource, "attached");
+				var inventory = variable_instance_get(parent_id, "carrying");
+				ds_list_delete(inventory, ds_list_size(inventory) - 1);
+				variable_instance_set(parent_id,"carrying", inventory);
+				instance_destroy(inst_resource);
+				
+				// DO SOMETHING FOR THE PLAYER HERE LIKE INCREASE LIFE
+				
+			} else {
+				//add object to the top of the carrying stack
+				ds_list_add(carrying, inst_resource);
+				//set actor to attached resource
+				variable_instance_set(inst_resource, "attached", id)
+				newResourceInRange = true;
+			}
 		}
 		else {
 			//show_debug_message("object out of range");
 		}
 	}
+		
 	//show_debug_message(newResourceInRange)
 	if !ds_list_empty(carrying) && !newResourceInRange {
 		var topOfStack = ds_list_find_value(carrying, ds_list_size(carrying) - 1);

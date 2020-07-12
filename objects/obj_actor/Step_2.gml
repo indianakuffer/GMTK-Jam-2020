@@ -3,14 +3,18 @@
 
 newX = xprevious + (xdir * xVelocity * velocityModifier * (global.step_delta));
 newY = yprevious + (ydir * yVelocity * velocityModifier *  (global.step_delta));
+
 //accomidate for collisions
-while(place_meeting(newX,newY,obj_wall)){
+var iter_cap = 10;
+var i = 0;
+while(place_meeting(newX,newY,obj_wall) || i < iter_cap){
 	if(place_meeting(xprevious, newY, obj_wall)){
 		newY -= ydir;
 	}
 	if(place_meeting(newX, yprevious, obj_wall)){
 		newX -= xdir;
 	}
+	i++;
 }
 x = newX;
 y = newY;
