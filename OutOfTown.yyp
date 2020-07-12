@@ -167,6 +167,14 @@
             }
         },
         {
+            "Key": "5ed982cf-c90e-4ca3-99b2-2d5d3e8bc6a5",
+            "Value": {
+                "id": "eacf57ae-39b4-46af-b5c5-b6a8b3bce536",
+                "resourcePath": "sprites\\spr_fridge\\spr_fridge.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6075fa22-942e-4564-b29d-116442e66bb8",
             "Value": {
                 "id": "a4a69f63-dc67-4d61-95d7-cce4ddb4df79",
