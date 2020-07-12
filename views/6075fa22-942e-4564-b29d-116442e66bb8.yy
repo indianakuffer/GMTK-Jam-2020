@@ -9,7 +9,9 @@
         "06640c38-7214-44cd-8e9c-8c8e6a0272ea",
         "5afd341d-2293-4ca8-abb7-73e9336e491d",
         "7046d45a-5e4a-428f-b087-87e3d6ea5315",
-        "0801981a-37f7-43a4-a9c4-56a263e3887e"
+        "0801981a-37f7-43a4-a9c4-56a263e3887e",
+        "0db835df-c2e8-48f6-9913-baf711107971",
+        "6b06552b-9732-4408-b688-a74e309e8637"
     ],
     "filterType": "GMSprite",
     "folderName": "agentsOfChaos",
