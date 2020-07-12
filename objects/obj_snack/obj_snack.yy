@@ -2,7 +2,7 @@
     "id": "e4d069a6-4941-4315-b115-bec1847408fc",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_plant",
+    "name": "obj_snack",
     "eventList": [
         
     ],
@@ -24,6 +24,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "f15dc9e7-ec88-4ba4-93fd-f1209512f31a",
+    "spriteId": "584d7aee-eb40-4a35-aac3-3cf736a6f3fc",
     "visible": true
 }
