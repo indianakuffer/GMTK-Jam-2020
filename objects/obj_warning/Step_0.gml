@@ -15,4 +15,4 @@ if (dist < origRad ) {
 	image_alpha = alpha	
 }
 
-if(!owner.broken) instance_destroy();
+if (!owner.broken) instance_destroy()
