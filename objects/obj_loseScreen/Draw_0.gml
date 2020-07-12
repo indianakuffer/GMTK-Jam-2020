@@ -20,7 +20,7 @@ if (canRestart) {
 	if (canRestartOpacity < 1) canRestartOpacity += 1/room_speed/canRestartFadeIn
 	draw_set_font(fnt_orangekid)
 	draw_set_alpha(canRestartOpacity)
-	draw_text(x + cam_width/2, y + cam_height/2 + 40,"Press any key to restart")
+	draw_text(x + cam_width/2, y + cam_height/2 + 40,"Press space to restart")
 	draw_set_alpha(1)
-	if keyboard_check_pressed(vk_anykey) room_goto(rm_menu)
+	if (keyboard_check_pressed(vk_space) && !global.gameRunning) {room_goto(rm_menu)}
 }
