@@ -6,7 +6,7 @@
 #macro interact_maxDistance 10
 #macro attachment_offset 5
 #macro velocity_recovery .05
-#macro slow_multiplier .5
+#macro slow_multiplier .4
 //#macro keyhold_timer 6
 
 //movement variables
