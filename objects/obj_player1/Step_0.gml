@@ -109,7 +109,7 @@ if dazed {
 		daze_remain = 0;
 		var mapping = curMap;
 	}
-	show_debug_message("Dazed time remaining: " + string(daze_remain));
+	//show_debug_message("Dazed time remaining: " + string(daze_remain));
 	//apply mapping
 	keymap_up = ds_list_find_value(mapping, 0);
 	keymap_left = ds_list_find_value(mapping, 1);

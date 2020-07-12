@@ -12,7 +12,9 @@ last_spawn = 0;
 spawn_pool = 0;
 
 #macro shotRate 10
+#macro max_shots 10
 last_shot = 0;
+
 
 #macro aocMaxRate 30
 last_maxIncrease = 0;
