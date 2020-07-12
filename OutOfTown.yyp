@@ -223,6 +223,14 @@
             }
         },
         {
+            "Key": "62ca1044-aa89-4961-a449-ef1e0fb78391",
+            "Value": {
+                "id": "2eccc817-13b2-4260-a313-3dce930b379a",
+                "resourcePath": "views\\62ca1044-aa89-4961-a449-ef1e0fb78391.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "64584047-d4c8-4aaf-8e1a-9b4898d79dc4",
             "Value": {
                 "id": "1924d62c-7d67-466a-a42f-b2c2d4e605aa",
@@ -319,6 +327,14 @@
             }
         },
         {
+            "Key": "8901f70e-ff7d-4bbe-b6c1-8538eb5e170a",
+            "Value": {
+                "id": "434f66a2-2618-44ee-8974-23301a79b543",
+                "resourcePath": "objects\\obj_warning\\obj_warning.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "992cc412-b76c-475a-b3ac-55ee4cdfa25a",
             "Value": {
                 "id": "95d4f002-f6ef-4684-b1ab-a8b48316e5c6",
@@ -330,7 +346,7 @@
             "Key": "9abf3648-cf7b-400e-9fdb-456a69b803fa",
             "Value": {
                 "id": "bc6ff089-ef87-4050-be60-bddc1dddbb56",
-                "resourcePath": "sounds\\snd_music\\snd_music.yy",
+                "resourcePath": "sounds\\snd_sample\\snd_sample.yy",
                 "resourceType": "GMSound"
             }
         },
@@ -340,6 +356,14 @@
                 "id": "51bbd1b0-e4ac-49d1-87f9-39f86acb250c",
                 "resourcePath": "objects\\obj_jar\\obj_jar.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "a90ff474-8e31-43ed-9445-3f32cb37cc39",
+            "Value": {
+                "id": "0c7d05e6-a953-47b6-97c4-1fdb7bd0d743",
+                "resourcePath": "sounds\\snd_music\\snd_music.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -476,6 +500,14 @@
                 "id": "b3bab68f-fd18-4650-88ad-2dcd443b30b7",
                 "resourcePath": "objects\\obj_npcSpawn\\obj_npcSpawn.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "da18e7a5-4d79-4848-a915-33c87642a91c",
+            "Value": {
+                "id": "96355186-4179-43a3-be02-271fc8d8f313",
+                "resourcePath": "sprites\\spr_warning\\spr_warning.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
