@@ -4,7 +4,7 @@ var i = 0;
 //select random NPC with empty inventory
 do {
 	// get random instance
-	var parent_id = instance_find(obj_npc, irandom(instance_number(obj_npc) - 1));
+	var parent_id = instance_find(obj_npc, irandom(instance_number(obj_npc)));
 	//get carrying list
 	var inventory = variable_instance_get(parent_id, "carrying");
 	i++;
