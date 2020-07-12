@@ -16,7 +16,7 @@ spawn_pool = 0;
 last_shot = 0;
 
 
-#macro aocMaxRate 30
+#macro aocMaxRate 60
 last_maxIncrease = 0;
 
 //UI creation
@@ -28,6 +28,8 @@ maxAocsBroken = 2
 for (var i = 0; i < instance_number(obj_agentOfChaos); ++i) {
 	ds_list_add(aocList, instance_find(obj_agentOfChaos,i))
 }
+
+#macro aocFailTimer 60
 
 //AOC break rates
 counter = 0

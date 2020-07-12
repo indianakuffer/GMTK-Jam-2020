@@ -1,13 +1,15 @@
 event_inherited()
 if (broken) {
+	if thresholdCounter == 0 {
+		thresholdCounter = global.passedTime;
+	}
 	sprite_index = brokenSprite
-	thresholdCounter++
 } else {
 	thresholdCounter = 0
 	sprite_index = originalSprite	
 }
 
-if (thresholdCounter >= threshold) {
+if (broken && ((global.passedTime - thresholdCounter) >= threshold)) {
 	var player = instance_nearest(x,y,obj_player1)
 	var camera = instance_nearest(x,y,obj_camera)
 	if (player.numLives > 0) player.numLives--
