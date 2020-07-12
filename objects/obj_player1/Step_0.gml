@@ -96,13 +96,15 @@ if keyboard_check_pressed(vk_space){
 if dazed {
 	if (global.passedTime - dazed_start < dazed_length){
 		//change applied mapping
+		daze_remain = dazed_length - (global.passedTime - dazed_start);
 		var mapping = newMap;
 		//show_debug_message("keys rotated")
 	} else {
 		dazed = false;
+		daze_remain = 0;
 		var mapping = curMap;
 	}
-	show_debug_message("Dazed time remaining: " + string(dazed_length - (global.passedTime - dazed_start)));
+	show_debug_message("Dazed time remaining: " + string(daze_remain));
 	//apply mapping
 	keymap_up = ds_list_find_value(mapping, 0);
 	keymap_left = ds_list_find_value(mapping, 1);

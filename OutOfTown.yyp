@@ -183,6 +183,14 @@
             }
         },
         {
+            "Key": "3d25ebeb-4ccd-426c-b4e4-809ea99ad98d",
+            "Value": {
+                "id": "334e245b-6f16-4bfe-b827-42cd65459c49",
+                "resourcePath": "objects\\obj_dazeTimer\\obj_dazeTimer.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "4afcfdd2-a83d-425b-a08b-8cda707963f7",
             "Value": {
                 "id": "3c9ee2ba-db39-4b23-ac71-1061e3aae25c",

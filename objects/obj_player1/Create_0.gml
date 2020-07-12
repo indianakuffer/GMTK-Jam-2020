@@ -9,6 +9,8 @@ numLives = 3
 #macro dazed_length 10
 dazed = false;
 dazed_start = 0;
+daze_remain = 0;
+instance_create_depth(x,y,global.uiDepth,obj_dazeTimer)
 
 keymap_up = ord("W");
 keymap_left = ord("A");
