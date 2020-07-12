@@ -23,3 +23,10 @@ if (counter > room_speed * threshold) {
 	counter = 0
 	threshold = random_range(minThreshold, maxThreshold)
 }
+
+//gameover logic
+
+if (obj_player1.numLives <= 0 && global.gameRunning) {
+	global.gameRunning = false
+	instance_create_depth(x,y,global.uiDepth - 100, obj_loseScreen)
+}

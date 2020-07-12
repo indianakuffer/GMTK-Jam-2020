@@ -27,7 +27,7 @@ if (menu_down){
 //menu actions
 if (menu_select){
 	switch(pos){
-		case 0: room_goto(rm_game); break;
+		case 0: global.gameRunning = true; room_goto(rm_game); break;
 		case 1: game_end(); break;
 	}
 }
