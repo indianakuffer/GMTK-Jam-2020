@@ -26,6 +26,6 @@ for (var i = 0; i < instance_number(obj_agentOfChaos); ++i) {
 
 //AOC break rates
 counter = 0
-threshold = 8
+threshold = 3
 minThreshold = 3
 maxThreshold = 8
