@@ -14,9 +14,11 @@ if (counter > room_speed * threshold) {
 		var aocID
 		do {
 			aocID = ds_list_find_value(aocList,irandom(length - 1))
-			
 		} until (!variable_instance_get(aocID,"broken"))
+		var newWarning = instance_create_depth(aocID.x,aocID.y,global.uiDepth+100,obj_warning)
 		variable_instance_set(aocID,"broken", true)
+		variable_instance_set(aocID,"warning", newWarning)
+		variable_instance_set(newWarning,"owner",aocID)
 	}
 	counter = 0
 	threshold = random_range(minThreshold, maxThreshold)

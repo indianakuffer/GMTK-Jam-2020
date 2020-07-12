@@ -13,4 +13,5 @@ if (thresholdCounter >= threshold) {
 	variable_instance_set(player,"numLives", variable_instance_get(player, "numLives") - 1)
 	variable_instance_set(camera,"shake",5)
 	broken = false
+	instance_destroy(warning)
 }
