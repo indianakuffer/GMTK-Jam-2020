@@ -12,11 +12,12 @@ if (velocityModifier < 1){
 //replace keyboard checks with scr_readInputs later
 
 //movement
-if keyboard_check(vk_left) || keyboard_check(ord("A")){
+
+if keyboard_check(keymap_left){
 	xdir = -1;
 	xVelocity = actor_velocity;
-} else if keyboard_check(vk_right) || keyboard_check(ord("D")){
-    xdir = 1;
+} else if keyboard_check(keymap_right){
+	xdir = 1;
 	xVelocity = actor_velocity;
 } else if (xVelocity > 0){
 	xVelocity -= actor_friction;
@@ -25,12 +26,12 @@ if keyboard_check(vk_left) || keyboard_check(ord("A")){
 	xVelocity = 0;
 }
 
-if keyboard_check(vk_up) || keyboard_check(ord("W")){
-     ydir = -1;
-	 yVelocity = actor_velocity;
-} else if keyboard_check(vk_down) || keyboard_check(ord("S")){
-     ydir = 1;
-	 yVelocity = actor_velocity;
+if keyboard_check(keymap_up){
+	    ydir = -1;
+		yVelocity = actor_velocity;
+} else if keyboard_check(keymap_down){
+	    ydir = 1;
+		yVelocity = actor_velocity;
 } else if (yVelocity > 0){
 	yVelocity -= actor_friction;
 } else {
@@ -38,6 +39,10 @@ if keyboard_check(vk_up) || keyboard_check(ord("W")){
 	yVelocity = 0;
 }
 
+if (!global.gameRunning) {
+	xVelocity = 0
+	yVelocity = 0
+}
 
 //interaction
 /*if keyboard_check(vk_space){
@@ -55,16 +60,33 @@ if keyboard_check_pressed(vk_space){
 		if (distance_to_object(inst_resource) <= interact_maxDistance
 		&& (ds_list_empty(carrying) || ds_list_find_index(carrying, inst_resource) == -1)){
 			script_execute(scr_debugMsg, ("Carrying " + string(inst_resource)));
-			//add object to the top of the carrying stack
-			ds_list_add(carrying, inst_resource);
-			//set actor to attached resource
-			variable_instance_set(inst_resource, "attached", id)
-			newResourceInRange = true;
+			
+			//if the object picked up was a shot
+			if(inst_resource.object_index == obj_shot){
+				
+				//get parent
+				var parent_id = variable_instance_get(inst_resource, "attached");
+				var inventory = variable_instance_get(parent_id, "carrying");
+				ds_list_delete(inventory, ds_list_size(inventory) - 1);
+				variable_instance_set(parent_id,"carrying", inventory);
+				instance_destroy(inst_resource);
+				// DO SOMETHING FOR THE PLAYER HERE LIKE INCREASE LIFE AND SWAP CONTROLS
+				numLives ++;
+				dazed = true;
+				dazed_start = global.passedTime;
+			} else {
+				//add object to the top of the carrying stack
+				ds_list_add(carrying, inst_resource);
+				//set actor to attached resource
+				variable_instance_set(inst_resource, "attached", id)
+				newResourceInRange = true;
+			}
 		}
 		else {
 			//show_debug_message("object out of range");
 		}
 	}
+		
 	//show_debug_message(newResourceInRange)
 	if !ds_list_empty(carrying) && !newResourceInRange {
 		var topOfStack = ds_list_find_value(carrying, ds_list_size(carrying) - 1);
@@ -74,4 +96,24 @@ if keyboard_check_pressed(vk_space){
 		ds_list_delete(carrying, ds_list_size(carrying) - 1);
 	}
 }
-	//interaction_timeAccumulator = 0;
+
+//apply keymapping swap
+if dazed {
+	if (global.passedTime - dazed_start < dazed_length){
+		//change applied mapping
+		daze_remain = dazed_length - (global.passedTime - dazed_start);
+		var mapping = newMap;
+		//show_debug_message("keys rotated")
+	} else {
+		dazed = false;
+		daze_remain = 0;
+		var mapping = curMap;
+	}
+	show_debug_message("Dazed time remaining: " + string(daze_remain));
+	//apply mapping
+	keymap_up = ds_list_find_value(mapping, 0);
+	keymap_left = ds_list_find_value(mapping, 1);
+	keymap_down = ds_list_find_value(mapping, 2);
+	keymap_right = ds_list_find_value(mapping, 3);	
+	
+}		
